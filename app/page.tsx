@@ -9,8 +9,10 @@ export default function Home() {
   // window.open(url, "_blank");
 
   return (
-    <div className="w-full">
-      <Navbar />
+    <div className="bg-white">
+      <div className="m-auto w-11/12">
+        <Navbar />
+      </div>
       <Header />
 
       {/* <a

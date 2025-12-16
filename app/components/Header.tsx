@@ -39,8 +39,8 @@ const Header = () => {
         <Image
           src="/assets/plane.png"
           alt="plane"
-          width={80}
-          height={80}
+          width={100}
+          height={100}
           className="opacity-80 drop-shadow-lg"
         />
       </motion.div>
