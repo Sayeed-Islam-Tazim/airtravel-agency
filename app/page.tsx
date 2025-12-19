@@ -1,12 +1,15 @@
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import { waPhoneNumber } from "./utils/constants";
 
 export default function Home() {
   const phone = "8801712345678";
   const message = "Hello, I would like to know more about your services.";
 
-  const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+  const url = `https://wa.me/${waPhoneNumber}?text=${encodeURIComponent(
+    message
+  )}`;
   // window.open(url, "_blank");
 
   return (
