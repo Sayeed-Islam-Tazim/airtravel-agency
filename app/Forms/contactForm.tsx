@@ -1,13 +1,15 @@
 "use client";
 
+import { FormEvent } from "react";
+
 const ContactForm = () => {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const handleForm = (e: {
-    preventDefault: () => void;
-    target: { name: { value: any } };
-  }) => {
+  const handleForm = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log("e.target.name.value", e.target.name.value);
+    const form = e.target as HTMLFormElement;
+    const nameInput = form.elements.namedItem("name") as HTMLInputElement;
+    const emailInput = form.elements.namedItem("email") as HTMLInputElement;
+
+    console.log(nameInput.value, emailInput.value);
   };
   return (
     <form
