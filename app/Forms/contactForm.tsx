@@ -1,7 +1,11 @@
 "use client";
 
 const ContactForm = () => {
-  const handleForm = (e) => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const handleForm = (e: {
+    preventDefault: () => void;
+    target: { name: { value: any } };
+  }) => {
     e.preventDefault();
     console.log("e.target.name.value", e.target.name.value);
   };
