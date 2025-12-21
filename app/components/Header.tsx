@@ -5,7 +5,7 @@ import Image from "next/image";
 const Header = () => {
   return (
     <motion.header
-      className="relative flex flex-col items-center justify-center h-[500px] rounded overflow-hidden text-center"
+      className="relative flex flex-col items-center justify-center h-125 rounded overflow-hidden text-center"
       animate={{
         y: [0, -20, -40, 2 - 0, 0, 30, 50, 30, 0], // wave pattern
         rotate: [0, 1, 0, -1, 0], // slight tilt
@@ -16,6 +16,12 @@ const Header = () => {
         repeat: Infinity,
       }}
     >
+      {/* <Image
+        src="/assets/footer-1.jpg"
+        alt="floating background"
+        fill
+        className="object-cover opacity-70"
+      /> */}
       <Image
         src="/assets/bg-clouds.png"
         alt="floating background"
