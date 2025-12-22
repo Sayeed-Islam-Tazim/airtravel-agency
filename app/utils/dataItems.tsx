@@ -207,3 +207,66 @@ export const serviceItems: {
     img: "/assets/offers/offer-1.jpg",
   },
 ];
+
+export const tourPackages: {
+  id: string;
+  name: string;
+  duration: string;
+  img: string;
+  place: string;
+  costingPerHead: string;
+  costingCouple?: string;
+}[] = [
+  {
+    id: "1",
+    name: "Tanguar Haor - Premium House Boat Tour",
+    duration: "2N/1D",
+    img: "/assets/popular-dest/tanguar-haor.jpeg",
+    place: "Sunamganj, Sylhet",
+    costingPerHead: "5k",
+  },
+  {
+    id: "2",
+    name: "Rangamati - Short Tour",
+    duration: "3N/2D",
+    img: "/assets/popular-dest/rangamati.jpg",
+    place: "Rangamati",
+    costingPerHead: "3k",
+    costingCouple: "7k",
+  },
+  {
+    id: "3",
+    name: "Kuala Lampur - Malaysia (Land Package)",
+    duration: "6N/5D",
+    img: "/assets/popular-dest/malaysia.jpg",
+    place: "Malaysia",
+    costingPerHead: "14k",
+    costingCouple: "30k",
+  },
+  {
+    id: "4",
+    name: "Austria - Standard Tour",
+    duration: "6N/5D",
+    img: "/assets/popular-dest/austria.jpg",
+    place: "Austria",
+    costingPerHead: "20k",
+    costingCouple: "45k",
+  },
+  {
+    id: "5",
+    name: "Meghalaya - Premium Package",
+    duration: "4N/3D",
+    img: "/assets/popular-dest/meghalaya.jpg",
+    place: "Meghalaya, India",
+    costingPerHead: "12k",
+  },
+  {
+    id: "6",
+    name: "Ladakh - Standard Tour",
+    duration: "5N/4D",
+    img: "/assets/popular-dest/ladakh.jpg",
+    place: "Ladakh, India",
+    costingPerHead: "20k",
+    costingCouple: "42k",
+  },
+];

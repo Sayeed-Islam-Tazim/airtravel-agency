@@ -1,4 +1,6 @@
+import PopularDest from "../components/PopularDest";
 import Services from "../components/Services";
+import TourPackages from "../components/TourPackages";
 import TravelNext from "../components/TravekNext";
 // import { waPhoneNumber } from "./../utils/constants";
 
@@ -14,7 +16,9 @@ const page = () => {
   return (
     <div>
       <Services />
+      <PopularDest />
       <TravelNext />
+      <TourPackages />
     </div>
 
     //   <a
