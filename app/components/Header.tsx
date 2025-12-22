@@ -5,7 +5,7 @@ import Image from "next/image";
 const Header = () => {
   return (
     <motion.header
-      className="relative flex flex-col items-center justify-center h-125 rounded overflow-hidden text-center"
+      className="relative flex flex-col items-center justify-center h-75 lg:h-100 rounded overflow-hidden text-center"
       animate={{
         y: [0, -20, -40, 2 - 0, 0, 30, 50, 30, 0], // wave pattern
         rotate: [0, 1, 0, -1, 0], // slight tilt
@@ -16,12 +16,6 @@ const Header = () => {
         repeat: Infinity,
       }}
     >
-      {/* <Image
-        src="/assets/footer-1.jpg"
-        alt="floating background"
-        fill
-        className="object-cover opacity-70"
-      /> */}
       <Image
         src="/assets/bg-clouds.png"
         alt="floating background"
@@ -29,10 +23,10 @@ const Header = () => {
         className="object-cover opacity-70"
       />
       {/* Title */}
-      <h1 className="text-5xl font-bold text-gray-800 mb-4 z-10">
+      <h1 className="text-2xl lg:text-5xl font-bold text-gray-800 mb-4 z-10">
         Explore the World 🌍
       </h1>
-      <p className="text-gray-600 text-lg z-10">
+      <p className="text-gray-600 text-xs lg:text-lg z-10">
         Book hotels, flights & tours easily
       </p>
 
@@ -61,12 +55,12 @@ const Header = () => {
           alt="palm"
           width={100}
           height={100}
-          className="opacity-80 drop-shadow-lg"
+          className="opacity-80  drop-shadow-lg"
         />
       </motion.div>
 
       <motion.div
-        className="absolute top-20 right-10"
+        className="absolute top-7 right-10 lg:top-20"
         animate={{ rotate: [0, 15, -15, 0] }}
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
       >

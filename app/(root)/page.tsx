@@ -1,21 +1,20 @@
-import { dancingScript } from "../fonts";
-import { waPhoneNumber } from "./../utils/constants";
+import Services from "../components/Services";
+import TravelNext from "../components/TravekNext";
+// import { waPhoneNumber } from "./../utils/constants";
 
 const page = () => {
-  const message = "Hello, I would like to know more about your services.";
+  // const message = "Hello, I would like to know more about your services.";
 
-  const url = `https://wa.me/${waPhoneNumber}?text=${encodeURIComponent(
-    message
-  )}`;
+  // const url = `https://wa.me/${waPhoneNumber}?text=${encodeURIComponent(
+  //   message
+  // )}`;
+
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+
   return (
-    <div className="h-48 bg-[url('/assets/man-before-sea.jpg')] bg-fixed bg-cover bg-center bg-no-repeat opacity-85 flex justify-center items-center gap-2">
-      <p className={`${dancingScript.className}`}>tazim</p>
-      <div>
-        <p>sd</p>
-        <p>sd</p>
-        <p>sd</p>
-        <p>sd</p>
-      </div>
+    <div>
+      <Services />
+      <TravelNext />
     </div>
 
     //   <a
