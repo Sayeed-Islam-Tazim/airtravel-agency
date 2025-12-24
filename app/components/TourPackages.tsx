@@ -14,13 +14,19 @@ const TourPackages = () => {
     <div className="bg-white text-black mx-auto flex flex-col justify-center items-center py-4">
       <h2 className="text-2xl  font-semibold mb-5">Tour Packages</h2>
 
-      <div className="w-5/6 mx-auto grid grid-cols-2 lg:grid-cols-3 gap-1 place-items-center place-content-center">
+      <div className="w-5/6 mx-auto grid grid-cols-2 lg:grid-cols-3 gap-3 place-items-center place-content-evenly">
         {tourPackages.map((tour) => {
           return (
             <div className="hover-3d shadow-2xl" key={tour.id}>
               <div className="card bg-white lg:w-60 lg:h-60 shadow-sm">
-                <figure className="p-2 rounded-2xl">
-                  <Image src={tour.img} width={300} height={300} alt="Shoes" />
+                <figure className="mt-2 p-2 rounded-lg">
+                  <Image
+                    src={tour.img}
+                    width={300}
+                    className=""
+                    height={300}
+                    alt="Shoes"
+                  />
                 </figure>
                 <div className="p-2 ">
                   <h2 className="px-2 text-sm lg:text-md">{tour.name}</h2>
@@ -47,7 +53,11 @@ const TourPackages = () => {
                       <></>
                     )}
                   </p>
-                  <Link href={`${url}`} className="btn btn-ghost">
+                  <Link
+                    href={`${url}`}
+                    className="p-2 flex gap-2 items-center text-sm text-[#53D367] "
+                    // hover:bg-[#53D367] hover:text-black
+                  >
                     Know More <FaWhatsapp />
                   </Link>
                 </div>
