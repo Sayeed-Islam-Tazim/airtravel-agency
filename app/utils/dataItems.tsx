@@ -13,7 +13,7 @@ export const navItems: {
   {
     id: "1",
     title: "Home",
-    href: "/docs/primitives/alert-dialog",
+    href: "/",
     children: [],
   },
   {
@@ -31,7 +31,7 @@ export const navItems: {
   {
     id: "4",
     title: "Pages",
-    img: "/assets/offer-4.jpg",
+    img: "/assets/offers/offer-4.jpg",
     children: [
       {
         id: "401",

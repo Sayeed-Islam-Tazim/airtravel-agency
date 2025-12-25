@@ -10,10 +10,15 @@ import {
   FaYoutube,
 } from "react-icons/fa6";
 import {
+  facebookPage,
+  instagramPage,
+  linkedinPage,
   mailAddress,
   mapAddress,
   physicalAddress,
   waPhoneNumber,
+  whatsappPage,
+  youtubePage,
 } from "../utils/constants";
 import Link from "next/link";
 
@@ -62,19 +67,34 @@ const Footer = () => {
         <div className="grid place-items-center">
           <p className="text-sm">Follow Us</p>
           <div className="flex gap-2 mb-4 items-center text-black">
-            <Link href="#" className="bg-white rounded-xl text-xs p-1">
+            <Link
+              href={facebookPage}
+              className="bg-white rounded-xl text-xs p-1 hover:text-blue-500"
+            >
               <FaFacebook />
             </Link>
-            <Link href="#" className="bg-white rounded-xl text-xs p-1">
+            <Link
+              href={youtubePage}
+              className="bg-white rounded-xl text-xs p-1 hover:text-red-500"
+            >
               <FaYoutube />
             </Link>
-            <Link href="#" className="bg-white rounded-xl text-xs p-1">
+            <Link
+              href={instagramPage}
+              className="bg-white rounded-xl text-xs p-1 hover:text-red-500"
+            >
               <FaInstagram />
             </Link>
-            <Link href="#" className="bg-white rounded-xl text-xs p-1">
+            <Link
+              href={linkedinPage}
+              className="bg-white rounded-xl text-xs p-1 hover:text-blue-800"
+            >
               <FaLinkedin />
             </Link>
-            <Link href="#" className="bg-white rounded-xl text-xs p-1">
+            <Link
+              href={whatsappPage}
+              className="bg-white rounded-xl text-xs p-1 hover:text-green-500"
+            >
               <FaWhatsapp />
             </Link>
           </div>

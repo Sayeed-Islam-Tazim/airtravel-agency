@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { navItems } from "../utils/dataItems";
+import { companyName } from "../utils/constants";
 
 const Navbar = () => {
   return (
@@ -15,7 +16,6 @@ const Navbar = () => {
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
-              {" "}
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -52,7 +52,9 @@ const Navbar = () => {
             })}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl hover:text-[#ca6c6c] ">Shopify</a>
+        <a className="btn btn-ghost text-xl hover:text-green-700 ">
+          {companyName}
+        </a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
@@ -74,7 +76,7 @@ const Navbar = () => {
                             {item.children!.map((subItem) => {
                               return (
                                 <li
-                                  className="hover:text-[#ca6c6c] text-[15px]"
+                                  className="hover:text-green-700 text-[15px]"
                                   key={subItem.id}
                                 >
                                   <Link href={subItem.href!}>
@@ -103,7 +105,7 @@ const Navbar = () => {
                               return (
                                 <p
                                   key={subItem.id}
-                                  className="hover:text-[#ca6c6c]"
+                                  className="hover:text-green-700"
                                 >
                                   <Link href={subItem.href!}>
                                     <span className="">{subItem.title}</span>
@@ -117,7 +119,7 @@ const Navbar = () => {
                     </ul>
                   </div>
                 ) : (
-                  <Link className="hover:text-[#ca6c6c]" href={item.href!}>
+                  <Link className="hover:text-green-700" href={item.href!}>
                     {item.title}
                   </Link>
                 )}

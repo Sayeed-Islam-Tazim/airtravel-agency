@@ -34,7 +34,7 @@ export default function RootLayout({
   // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
   return (
     <html lang="en">
-      <body className={`${roboto.className} } bg-white`}>
+      <body className={`${roboto.className} bg-white`}>
         <div className="bg-white">
           <div className="m-auto w-11/12">
             <Navbar />

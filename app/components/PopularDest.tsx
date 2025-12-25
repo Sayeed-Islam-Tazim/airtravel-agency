@@ -3,7 +3,7 @@ import { serviceItems } from "../utils/dataItems";
 
 const PopularDest = () => {
   return (
-    <div className="bg-white text-black mx-auto flex flex-col justify-center items-center py-4">
+    <div className="bg-gray-400/10 text-black mx-auto flex flex-col justify-center items-center py-4">
       <h2 className="text-2xl  font-semibold mb-5">Popluar Destinations</h2>
 
       <div className="w-5/6 mx-auto grid grid-cols-2 lg:grid-cols-3 gap-3 place-items-center place-content-center">
