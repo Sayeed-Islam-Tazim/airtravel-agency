@@ -1,11 +1,9 @@
-import Image from "next/image";
 import ContactForm from "../Forms/contactForm";
 import {
   FaFacebook,
   FaInstagram,
   FaLinkedin,
   FaLocationDot,
-  FaLocationPin,
   FaMessage,
   FaPhone,
   FaWhatsapp,
@@ -13,6 +11,7 @@ import {
 } from "react-icons/fa6";
 import {
   mailAddress,
+  mapAddress,
   physicalAddress,
   waPhoneNumber,
 } from "../utils/constants";
@@ -26,19 +25,23 @@ const Footer = () => {
           <p className="border-l-2 border-green-700 text-2xl px-2 font-bold my-2">
             Get In Touch
           </p>
-          <p className="flex items-center gap-2 text-sm">
-            <span>
-              <FaPhone className="text-green-700" />
-            </span>
-            {waPhoneNumber}
-          </p>
-          <p className="flex items-center gap-2 text-sm">
-            <span>
-              <FaMessage className="text-green-700" />
-            </span>
-            {mailAddress}
-          </p>
-          <Link href="https://maps.app.goo.gl/w7TdNHBXXtqr4ohTA">
+          <Link href={`tel:${waPhoneNumber}`}>
+            <p className="flex items-center gap-2 text-sm">
+              <span>
+                <FaPhone className="text-green-700" />
+              </span>
+              +{waPhoneNumber}
+            </p>
+          </Link>
+          <Link href={`mailto:${mailAddress}`}>
+            <p className="flex items-center gap-2 text-sm">
+              <span>
+                <FaMessage className="text-green-700" />
+              </span>
+              {mailAddress}
+            </p>
+          </Link>
+          <Link href={mapAddress}>
             <p className="flex items-center gap-2 text-sm">
               <span>
                 <FaLocationDot className="text-green-700" />

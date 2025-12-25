@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import { tourPackages } from "../utils/dataItems";
 import { FaLocationDot, FaRegClock, FaWhatsapp } from "react-icons/fa6";
@@ -5,11 +6,15 @@ import Link from "next/link";
 import { waPhoneNumber } from "../utils/constants";
 
 const TourPackages = () => {
-  const message = "Hello, I would like to know more about your services.";
+  const knowMore = (tourName: string) => {
+    const message = `Hello, I would like to know more about your ${tourName} package.`;
 
-  const url = `https://wa.me/${waPhoneNumber}?text=${encodeURIComponent(
-    message
-  )}`;
+    const url = `https://wa.me/${waPhoneNumber}?text=${encodeURIComponent(
+      message
+    )}`;
+
+    window.open(url, "_blank", "noopener,noreferrer");
+  };
   return (
     <div className="bg-white text-black mx-auto flex flex-col justify-center items-center py-4">
       <h2 className="text-2xl  font-semibold mb-5">Tour Packages</h2>
@@ -53,24 +58,23 @@ const TourPackages = () => {
                       <></>
                     )}
                   </p>
-                  <Link
+                  {/* <Link
                     href={`${url}`}
                     className="p-2 flex gap-2 items-center text-sm text-[#53D367] "
                     // hover:bg-[#53D367] hover:text-black
                   >
                     Know More <FaWhatsapp />
-                  </Link>
+                  </Link> */}
+                  <button
+                    className="p-2 flex gap-2 items-center text-sm text-[#53D367] "
+                    onClick={() => {
+                      knowMore(tour.name);
+                    }}
+                  >
+                    Know More <FaWhatsapp />
+                  </button>
                 </div>
               </div>
-              {/* 8 empty divs needed for the 3D effect */}
-              {/* <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div> */}
             </div>
           );
         })}
