@@ -2,20 +2,9 @@
 import Image from "next/image";
 import { tourPackages } from "../utils/dataItems";
 import { FaLocationDot, FaRegClock, FaWhatsapp } from "react-icons/fa6";
-import Link from "next/link";
-import { waPhoneNumber } from "../utils/constants";
 import { handleWaContact } from "../utils/util";
 
 const TourPackages = () => {
-  // const knowMore = (tourName: string) => {
-  //   const message = `Hello, I would like to know more about your ${tourName} package.`;
-
-  //   const url = `https://wa.me/${waPhoneNumber}?text=${encodeURIComponent(
-  //     message
-  //   )}`;
-
-  //   window.open(url, "_blank", "noopener,noreferrer");
-  // };
   return (
     <div className="bg-white text-black mx-auto flex flex-col justify-center items-center py-4">
       <h2 className="text-2xl  font-semibold mb-5">Tour Packages</h2>
@@ -59,13 +48,6 @@ const TourPackages = () => {
                       <></>
                     )}
                   </p>
-                  {/* <Link
-                    href={`${url}`}
-                    className="p-2 flex gap-2 items-center text-sm text-[#53D367] "
-                    // hover:bg-[#53D367] hover:text-black
-                  >
-                    Know More <FaWhatsapp />
-                  </Link> */}
                   <button
                     className="p-2 flex gap-2 items-center text-sm text-[#53D367] "
                     onClick={() => handleWaContact({ tourName: tour.name })}
@@ -73,7 +55,6 @@ const TourPackages = () => {
                     <span>Know More</span>
                     <FaWhatsapp />
                   </button>
-                  {/* <WaContact tourName={tour.name} buttonName="Know More" /> */}
                 </div>
               </div>
             </div>
