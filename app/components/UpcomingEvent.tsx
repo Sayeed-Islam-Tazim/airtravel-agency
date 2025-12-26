@@ -1,5 +1,5 @@
 "use client";
-import { FaCalendar } from "react-icons/fa6";
+import { FaCalendarDays } from "react-icons/fa6";
 import { companyName, facebookPage } from "../utils/constants";
 import Link from "next/link";
 
@@ -12,7 +12,7 @@ const UpcomingEvent = () => {
         className="flex items-center gap-2 p-2 rounded-xl text-sm text-white bg-green-700"
         href={facebookPage}
       >
-        <span>Find All Event of {companyName} </span> <FaCalendar />
+        <span>Find All Event of {companyName} </span> <FaCalendarDays />
       </Link>
     </div>
   );

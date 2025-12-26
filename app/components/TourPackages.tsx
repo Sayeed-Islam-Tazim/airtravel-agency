@@ -1,13 +1,21 @@
 "use client";
 import Image from "next/image";
 import { tourPackages } from "../utils/dataItems";
-import { FaLocationDot, FaRegClock, FaWhatsapp } from "react-icons/fa6";
+import {
+  FaLocationDot,
+  FaPlaneDeparture,
+  FaRegClock,
+  FaWhatsapp,
+} from "react-icons/fa6";
 import { handleWaContact } from "../utils/util";
+import { motion } from "framer-motion";
 
 const TourPackages = () => {
+  const showAllEvents = () => {};
+
   return (
     <div className="bg-white text-black mx-auto flex flex-col justify-center items-center py-4">
-      <h2 className="text-2xl  font-semibold mb-5">Tour Packages</h2>
+      <h2 className="text-2xl font-semibold mb-5">Tour Packages</h2>
 
       <div className="w-5/6 mx-auto grid grid-cols-2 lg:grid-cols-3 gap-3 place-items-center place-content-evenly">
         {tourPackages.map((tour) => {
@@ -61,6 +69,20 @@ const TourPackages = () => {
           );
         })}
       </div>
+      <motion.button
+        initial={{ scaleX: 0 }}
+        whileInView={{ scaleX: 1 }}
+        transition={{
+          duration: 1.2,
+          ease: "easeInOut",
+        }}
+        viewport={{ once: true, amount: 0.4 }}
+        className="mt-5 p-2 bg-green-700 text-white text-xs lg:text-lg flex items-center justify-center rounded-xl gap-2 origin-left"
+        onClick={() => showAllEvents()}
+      >
+        <span>Find all of our packages</span>
+        <FaPlaneDeparture />
+      </motion.button>
     </div>
   );
 };
