@@ -27,7 +27,13 @@ const PopularDest = () => {
             >
               <div className="card bg-white w-full  shadow-sm">
                 <figure className="relative lg:min-h-50 p-2 rounded-2xl">
-                  <Image src={item.gif} width={300} height={300} alt="Shoes" />
+                  <Image
+                    unoptimized
+                    src={item.gif}
+                    width={300}
+                    height={300}
+                    alt="Shoes"
+                  />
                   <div className="absolute inset-0 flex items-center justify-center text-white/70 text-3xl">
                     <FaPlay />
                   </div>

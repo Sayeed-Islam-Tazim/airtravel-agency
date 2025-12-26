@@ -1,3 +1,4 @@
+import AskNow from "../components/AskNow";
 import PopularDest from "../components/PopularDest";
 import Services from "../components/Services";
 import TourPackages from "../components/TourPackages";
@@ -12,6 +13,7 @@ const page = () => {
       <PopularDest />
       <TravelNext />
       <TourPackages />
+      <AskNow />
     </div>
   );
 };

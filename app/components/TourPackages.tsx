@@ -4,17 +4,18 @@ import { tourPackages } from "../utils/dataItems";
 import { FaLocationDot, FaRegClock, FaWhatsapp } from "react-icons/fa6";
 import Link from "next/link";
 import { waPhoneNumber } from "../utils/constants";
+import { handleWaContact } from "../utils/util";
 
 const TourPackages = () => {
-  const knowMore = (tourName: string) => {
-    const message = `Hello, I would like to know more about your ${tourName} package.`;
+  // const knowMore = (tourName: string) => {
+  //   const message = `Hello, I would like to know more about your ${tourName} package.`;
 
-    const url = `https://wa.me/${waPhoneNumber}?text=${encodeURIComponent(
-      message
-    )}`;
+  //   const url = `https://wa.me/${waPhoneNumber}?text=${encodeURIComponent(
+  //     message
+  //   )}`;
 
-    window.open(url, "_blank", "noopener,noreferrer");
-  };
+  //   window.open(url, "_blank", "noopener,noreferrer");
+  // };
   return (
     <div className="bg-white text-black mx-auto flex flex-col justify-center items-center py-4">
       <h2 className="text-2xl  font-semibold mb-5">Tour Packages</h2>
@@ -67,12 +68,12 @@ const TourPackages = () => {
                   </Link> */}
                   <button
                     className="p-2 flex gap-2 items-center text-sm text-[#53D367] "
-                    onClick={() => {
-                      knowMore(tour.name);
-                    }}
+                    onClick={() => handleWaContact({ tourName: tour.name })}
                   >
-                    Know More <FaWhatsapp />
+                    <span>Know More</span>
+                    <FaWhatsapp />
                   </button>
+                  {/* <WaContact tourName={tour.name} buttonName="Know More" /> */}
                 </div>
               </div>
             </div>
