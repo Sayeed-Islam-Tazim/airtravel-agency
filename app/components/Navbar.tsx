@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { navItems } from "../utils/dataItems";
-import { companyName } from "../utils/constants";
+import { companyLogo, companyName } from "../utils/constants";
 
 const Navbar = () => {
   return (
@@ -52,9 +52,16 @@ const Navbar = () => {
             })}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl hover:text-green-700 ">
-          {companyName}
-        </a>
+        <Link
+          href="/"
+          className="w-full flex justify-center items-center hover:text-green-700 "
+        >
+          <Image src={companyLogo} height={50} width={50} alt="logo" />
+          <span className="text-[15px] lg:text-lg font-semibold ">
+            {/* invisible lg:visible  */}
+            {companyName}
+          </span>
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">

@@ -5,6 +5,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import { companyName } from "./utils/constants";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -22,7 +23,7 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "Air Travel Agency",
+  title: companyName,
   description: "Travel Smarter. Fly Better",
 };
 

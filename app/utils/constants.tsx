@@ -1,4 +1,5 @@
 export const companyName = "Air Travel Agency";
+export const companyLogo = "/assets/logo.png";
 export const waPhoneNumber = "8801303023378";
 export const mailAddress = "info@airtravelagency.com";
 export const mapAddress = "https://maps.app.goo.gl/w7TdNHBXXtqr4ohTA";

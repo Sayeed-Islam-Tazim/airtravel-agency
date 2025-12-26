@@ -1,28 +1,35 @@
 "use client";
 import Image from "next/image";
-import { serviceItems } from "../utils/dataItems";
+import { popularDestinations } from "../utils/dataItems";
 import { useState } from "react";
+import { FaPlay } from "react-icons/fa6";
 
 const PopularDest = () => {
   const [open, setOpen] = useState(false);
+  const [video, setVideo] = useState("");
+
+  const videoPlay = (video: string) => {
+    setVideo(video);
+    setOpen(true);
+  };
 
   return (
     <div className="bg-gray-400/10 text-black mx-auto flex flex-col justify-center items-center py-4">
       <h2 className="text-2xl  font-semibold mb-5">Popular Destinations</h2>
 
       <div className="w-5/6 mx-auto grid grid-cols-2 lg:grid-cols-3 gap-3 place-items-center place-content-center">
-        {serviceItems.map((item) => {
+        {popularDestinations.map((item) => {
           return (
             <div
-              onClick={() => setOpen(true)}
+              onClick={() => videoPlay(item.video)}
               className="hover-3d"
               key={item.id}
             >
               <div className="card bg-white w-full  shadow-sm">
                 <figure className="relative lg:min-h-50 p-2 rounded-2xl">
-                  <Image src={item.img} width={300} height={300} alt="Shoes" />
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    hi
+                  <Image src={item.gif} width={300} height={300} alt="Shoes" />
+                  <div className="absolute inset-0 flex items-center justify-center text-white/70 text-3xl">
+                    <FaPlay />
                   </div>
                 </figure>
                 <div className="p-2 text-center">
@@ -46,7 +53,8 @@ const PopularDest = () => {
 
               <iframe
                 className="w-full h-full"
-                src="https://www.youtube.com/embed/VIDEO_ID?autoplay=1&mute=1&rel=0"
+                src={`${video}`}
+                // ?autoplay=1&mute=1
                 title="YouTube video"
                 allow="autoplay; encrypted-media"
                 allowFullScreen

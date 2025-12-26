@@ -208,6 +208,57 @@ export const serviceItems: {
   },
 ];
 
+export const popularDestinations: {
+  id: string;
+  title: string;
+  video: string;
+  gif: string;
+}[] = [
+  {
+    id: "1",
+    title: "Tanguar Haor",
+    video:
+      "https://www.youtube.com/embed/watch?v=LQ3677p5NWg&list=RDLQ3677p5NWg&start_radio=1",
+
+    gif: "/assets/gifs/beach-house.gif",
+  },
+  {
+    id: "2",
+    title: "Rangamati",
+    video:
+      "https://www.youtube.com/embed/watch?v=LQ3677p5NWg&list=RDLQ3677p5NWg&start_radio=1",
+    gif: "/assets/gifs/cool-dance.gif",
+  },
+  {
+    id: "3",
+    title: "Kuala Lampur",
+    video:
+      "https://www.youtube.com/embed/watch?v=LQ3677p5NWg&list=RDLQ3677p5NWg&start_radio=1",
+    gif: "/assets/gifs/dancing.gif",
+  },
+  {
+    id: "4",
+    title: "Austria",
+    video:
+      "https://www.youtube.com/embed/watch?v=LQ3677p5NWg&list=RDLQ3677p5NWg&start_radio=1",
+    gif: "/assets/gifs/funny.gif",
+  },
+  {
+    id: "5",
+    title: "Meghalaya",
+    video:
+      "https://www.youtube.com/embed/watch?v=LQ3677p5NWg&list=RDLQ3677p5NWg&start_radio=1",
+    gif: "/assets/gifs/walking.gif",
+  },
+  {
+    id: "6",
+    title: "Ladakh",
+    video:
+      "https://www.youtube.com/embed/watch?v=LQ3677p5NWg&list=RDLQ3677p5NWg&start_radio=1",
+    gif: "/assets/gifs/duck-walking.gif",
+  },
+];
+
 export const tourPackages: {
   id: string;
   name: string;
