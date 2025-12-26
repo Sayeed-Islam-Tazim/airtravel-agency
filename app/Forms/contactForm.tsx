@@ -16,7 +16,7 @@ const ContactForm = () => {
       onSubmit={handleForm}
       className="rounded-box shadow-2xl pt-2 bg-white lg:bg-transparent lg:-mt-15"
     >
-      <fieldset className="bg-white text-green-700 border border-base-300 rounded-box w-full lg:w-xs p-4">
+      <fieldset className="bg-white text-green-700 lg:border-2 lg:border-green-700 rounded-box w-full lg:w-xs p-4">
         <legend className="text-2xl px-2 border-l-2 border-green-700">
           Contact Us
         </legend>
