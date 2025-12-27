@@ -41,7 +41,7 @@ const Header = () => {
           alt="plane"
           width={100}
           height={100}
-          className="opacity-80 drop-shadow-lg"
+          className="opacity-80 drop-shadow-lg w-10 h-10 sm:w-14 sm:h-14 lg:w-20 lg:h-20"
         />
       </motion.div>
 
@@ -55,7 +55,7 @@ const Header = () => {
           alt="palm"
           width={100}
           height={100}
-          className="opacity-80  drop-shadow-lg"
+          className="opacity-80 drop-shadow-lg w-10 h-10 sm:w-14 sm:h-14 lg:w-20 lg:h-20"
         />
       </motion.div>
 
@@ -69,7 +69,7 @@ const Header = () => {
           alt="suitcase"
           width={90}
           height={90}
-          className="opacity-90 drop-shadow-xl"
+          className="opacity-90 drop-shadow-xl w-10 h-14 sm:w-14 sm:h-18 lg:w-20 lg:h-24"
         />
       </motion.div>
     </motion.header>

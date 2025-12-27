@@ -57,7 +57,7 @@ const TourPackages = () => {
                     )}
                   </p>
                   <button
-                    className="p-2 flex gap-2 items-center text-sm text-[#53D367] "
+                    className="p-2 flex gap-2 items-center text-xs lg:text-sm text-[#53D367]"
                     onClick={() => handleWaContact({ tourName: tour.name })}
                   >
                     <span>Know More</span>
