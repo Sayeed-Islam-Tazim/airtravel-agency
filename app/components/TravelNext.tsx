@@ -64,11 +64,11 @@ const TravelNext = () => {
                 )} */}
                 {showVote && (
                   <span
-                    className="hover:text-green-700"
+                    className="hover:text-green-700 text-xs lg:text-sm"
                     onClick={() => setShowVote(false)}
                   >
-                    <span className="font-semibold">{dest.vote}%</span> voted
-                    for {dest.title}
+                    <span className="font-semibold ">{dest.vote}% </span>
+                    voted for {dest.title}
                   </span>
                 )}
                 {!showVote && (

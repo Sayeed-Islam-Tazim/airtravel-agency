@@ -34,8 +34,8 @@ const PopularDest = () => {
                     height={300}
                     alt="Shoes"
                   />
-                  <div className="absolute inset-0 flex items-center justify-center text-white/70 text-3xl">
-                    <FaPlay />
+                  <div className="absolute inset-0 flex items-center justify-center text-white/70 text-5xl">
+                    <FaPlay className=" border-3 rounded-3xl border-white/70 p-2" />
                   </div>
                 </figure>
                 <div className="p-2 text-center">

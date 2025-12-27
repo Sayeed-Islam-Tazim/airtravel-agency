@@ -16,7 +16,7 @@ const AskNow = () => {
         className="relative text-black origin-center"
       >
         <div className="relative ">
-          <p className="text-sm lg:text-xl">Are You Conviced?</p>
+          <p className="text-sm lg:text-xl">Are You Convinced?</p>
           <motion.hr
             className="absolute origin-left left-0 -bottom-2 h-1 w-2/3 bg-green-700 -rotate-2 rounded-full"
             animate={{
