@@ -41,7 +41,7 @@ const Header = () => {
           alt="plane"
           width={100}
           height={100}
-          className="opacity-80 drop-shadow-lg w-10 h-10 sm:w-14 sm:h-14 lg:w-20 lg:h-20"
+          className="opacity-80 drop-shadow-lg w-20 h-20 sm:w-18 sm:h-18 lg:w-30 lg:h-30"
         />
       </motion.div>
 
