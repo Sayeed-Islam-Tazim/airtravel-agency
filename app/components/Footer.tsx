@@ -32,7 +32,7 @@ const Footer = () => {
             Get In Touch
           </p>
           <Link href={`tel:${waPhoneNumber}`}>
-            <p className="flex items-center gap-2 text-sm">
+            <p className="flex items-center gap-2 text-sm hover:text-green-700">
               <span>
                 <FaPhone className="text-green-700" />
               </span>
@@ -40,7 +40,7 @@ const Footer = () => {
             </p>
           </Link>
           <Link href={`mailto:${mailAddress}`}>
-            <p className="flex items-center gap-2 text-sm">
+            <p className="flex items-center gap-2 text-sm hover:text-green-700">
               <span>
                 <FaMessage className="text-green-700" />
               </span>
@@ -48,7 +48,7 @@ const Footer = () => {
             </p>
           </Link>
           <Link href={mapAddress}>
-            <p className="flex items-center gap-2 text-sm">
+            <p className="flex items-center gap-2 text-sm hover:text-green-700">
               <span>
                 <FaLocationDot className="text-green-700" />
               </span>
@@ -100,7 +100,7 @@ const Footer = () => {
             </Link>
           </div>
         </div>
-        <p className="text-xs">Made with ❤ by Taz Digital</p>
+        <p className="text-xs">Made with ❤ by Taz</p>
       </div>
     </footer>
   );

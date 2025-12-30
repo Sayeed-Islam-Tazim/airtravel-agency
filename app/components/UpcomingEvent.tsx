@@ -9,7 +9,7 @@ const UpcomingEvent = () => {
       <h2 className="text-2xl  font-semibold mb-5">Upcoming Events</h2>
       <p className="text-xs">No upcoming events.</p>
       <Link
-        className="flex items-center gap-2 p-2 rounded-xl text-sm text-white bg-green-700"
+        className="flex items-center gap-2 p-2 rounded-xl text-sm text-white bg-green-700 hover:bg-green-800"
         href={facebookPage}
       >
         <span>Find All Event of {companyName} </span> <FaCalendarDays />

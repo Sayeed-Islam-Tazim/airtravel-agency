@@ -52,7 +52,7 @@ const AskNow = () => {
           duration: 0.6,
           ease: "easeOut",
         }}
-        className="relative text-white bg-green-700 flex items-center justify-center px-2 gap-1 py-1 rounded"
+        className="relative text-white bg-green-700 flex items-center justify-center px-2 gap-1 py-1 rounded hover:bg-green-800"
         onClick={() => handleWaContact({ message: waMessage })}
       >
         <FaWhatsapp className="flex-none" />

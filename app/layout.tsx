@@ -37,14 +37,10 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${roboto.className} bg-white`}>
         <div className="bg-white">
-          <div className="m-auto w-11/12">
-            <Navbar />
-          </div>
+          <Navbar />
           <Header />
           {children}
-          <div className="">
-            <Footer />
-          </div>
+          <Footer />
         </div>
       </body>
     </html>

@@ -77,7 +77,7 @@ const TourPackages = () => {
           ease: "easeInOut",
         }}
         viewport={{ once: true, amount: 0.4 }}
-        className="mt-5 p-2 bg-green-700 text-white text-xs lg:text-lg flex items-center justify-center rounded-xl gap-2 origin-left"
+        className="mt-5 p-2 bg-green-700 text-white hover:bg-green-800 text-xs lg:text-lg flex items-center justify-center rounded-xl gap-2 origin-left"
         onClick={() => showAllEvents()}
       >
         <span>Find all of our packages</span>

@@ -5,7 +5,7 @@ import { companyLogo, companyName } from "../utils/constants";
 
 const Navbar = () => {
   return (
-    <div className="mt-2 navbar text-xs bg-white text-[#383838] border-x-blue-600 rounded shadow-lg">
+    <div className="mt-2 w-11/12 mx-auto navbar text-xs bg-white text-[#383838] border-x-blue-600 rounded shadow-lg">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
