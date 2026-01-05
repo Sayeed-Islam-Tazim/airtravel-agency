@@ -25,7 +25,7 @@ const PopularDest = () => {
               className="hover-3d"
               key={item.id}
             >
-              <div className="card bg-white w-full  shadow-sm">
+              <div className="card bg-white shadow-sm">
                 <figure className="relative lg:min-h-50 p-2 rounded-2xl">
                   <Image
                     unoptimized

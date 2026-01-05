@@ -33,7 +33,7 @@ const TourPackages = () => {
                 </figure>
                 <div className="p-2 ">
                   <h2 className="px-2 text-sm lg:text-md">{tour.name}</h2>
-                  <div className="p-2 text-[10px] lg:text-[15px] text-gray-700/40 flex items-center gap-1">
+                  <div className="p-2 text-[10px] lg:text-xs text-gray-700/40 flex items-center gap-1">
                     <FaRegClock />
                     <p className="">{tour.duration}</p>
                     <span> | </span>

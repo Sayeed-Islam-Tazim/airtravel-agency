@@ -11,6 +11,8 @@ const UpcomingEvent = () => {
       <Link
         className="flex items-center gap-2 p-2 rounded-xl text-sm text-white bg-green-700 hover:bg-green-800"
         href={facebookPage}
+        target="_blank"
+        rel="noopener noreferrer"
       >
         <span>Find All Event of {companyName} </span> <FaCalendarDays />
       </Link>

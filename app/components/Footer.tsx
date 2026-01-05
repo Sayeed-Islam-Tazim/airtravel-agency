@@ -24,7 +24,7 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="min-h-64 bg-[url('/assets/footer-1.jpg')] bg-cover bg-center bg-no-repeat opacity-85">
+    <footer className="min-h-64 bg-[url('/assets/footer-2.jpg')] bg-cover bg-center bg-no-repeat opacity-85">
       {/*  lg:mt-12 */}
       <div className="w-full grid grid-cols-1 lg:grid-cols-2 justify-around items-center place-items-center mx-auto px-2 py-3">
         <nav className="text-white mb-4 flex flex-col gap-1">
